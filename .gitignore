@@ -37,6 +37,7 @@ models/
 *.swp
 .DS_Store
 Thumbs.db
+three
 
 # Файлы сборки
 dist/
