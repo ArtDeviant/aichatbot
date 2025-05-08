@@ -1,0 +1,33 @@
+{% extends "aichat/base.html" %}
+{% block title %}Вход{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-center vh-100">
+    <main class="form-signin text-center">
+        <form method="post" class="p-4 border rounded-3 shadow-sm bg-white" style="max-width: 330px; width: 100%;">
+            {% csrf_token %}
+
+            <h1 class="h3 mb-3 fw-normal">Вход</h1>
+
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} mb-3">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <div class="form-floating mb-2">
+                <input type="text" name="username" id="id_username" class="form-control" placeholder="Имя пользователя" required>
+                <label for="id_username">Имя пользователя</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" name="password" id="id_password" class="form-control" placeholder="Пароль" required>
+                <label for="id_password">Пароль</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Войти</button>
+        </form>
+    </main>
+</div>
+{% endblock %}

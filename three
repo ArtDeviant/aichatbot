@@ -1,0 +1,62 @@
+AL
+|-.vent
+|-aichat
+|   |-machine_learning
+|   |   |-__init__.py
+|   |   |-learning.py
+|   |   |-model_manager.py
+|   |   |-nlp_processor.py
+|   |   |-response_handler.ru
+|   |   |-utils.py
+|   |-management
+|   |   |-commands
+|   |   |   |-run_telegram_bot.py
+|   |-migrations
+|   |-static
+|   |   |-css
+|   |   |-images
+|   |   |-js
+|   |-templates
+|   |   |-aichat
+|   |   |   |-admin
+|   |   |   |   |-chat.html
+|   |   |   |   |-conversations.html
+|   |   |   |   |-dashboard.html
+|   |   |   |   |-login.html
+|   |   |   |   |-logout.html
+|   |   |   |   |-users.html
+|   |   |   |-partials
+|   |   |   |   |-message.html
+|   |   |   |-base.html
+|   |   |   |-home.html
+|   |-__init__.py
+|   |-admin.py
+|   |-apps.py
+|   |-forms.py
+|   |-models.py
+|   |-telegram_bot.py
+|   |-test.py
+|   |-views.py
+|-config
+|   |-settings
+|   |   |-__init__.py
+|   |   |-base.py
+|   |   |-development.py
+|   |   |-production.py
+|   |-__init__.py
+|   |-asgi.py
+|   |-settings.py
+|   |-urls.py
+|   |-wsgi.py
+|-static
+|-venv
+|-debug.log
+|-manage.py
+|-.env
+|-requirements.txt
+
+
+source venv/bin/activate
+export DJANGO_ENV=development
+export DJANGO_SETTINGS_MODULE=config.settings
+python manage.py migrate

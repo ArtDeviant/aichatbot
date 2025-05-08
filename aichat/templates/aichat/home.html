@@ -1,0 +1,67 @@
+{% extends "aichat/base.html" %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 text-center">
+        <h1 class="display-4 mb-4">AIchat - Интеллектуальный помощник</h1>
+        <p class="lead">
+            AIchat - это самообучающаяся система с искусственным интеллектом,
+            которая может отвечать на вопросы, искать информацию в интернете
+            и постоянно улучшать свои знания.
+        </p>
+
+        {% if not user.is_authenticated %}
+        <div class="mt-5">
+            <a href="{% url 'login' %}" class="btn btn-primary btn-lg px-4 me-3">
+                <i class="bi bi-box-arrow-in-right"></i> Вход для администраторов
+            </a>
+        </div>
+        {% else %}
+        <div class="mt-5">
+            <a href="{% url 'dashboard' %}" class="btn btn-primary btn-lg px-4 me-3">
+                <i class="bi bi-speedometer2"></i> Панель управления
+            </a>
+            <a href="{% url 'new_chat' %}" class="btn btn-success btn-lg px-4">
+                <i class="bi bi-chat-left-text"></i> Новая беседа
+            </a>
+        </div>
+        {% endif %}
+
+        <div class="row mt-5 text-start">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-robot text-primary"></i> Самообучение</h3>
+                        <p class="card-text">
+                            Система постоянно анализирует взаимодействия с пользователями
+                            и обновляет свою базу знаний.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-search text-success"></i> Поиск информации</h3>
+                        <p class="card-text">
+                            Если ответа нет в базе знаний, AIchat ищет информацию в интернете
+                            и предоставляет актуальные данные.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-chat-square-text text-info"></i> Мультиплатформенность</h3>
+                        <p class="card-text">
+                            Доступ через веб-интерфейс и Telegram бота с синхронизацией
+                            всех бесед.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
