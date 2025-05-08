@@ -1,0 +1,44 @@
+# PyCharm
+.idea/
+
+# Виртуальные окружения
+venv/
+env/
+.venv/
+.env
+Discription.txt
+
+# Кэши Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Логи и временные файлы
+*.log
+*.log.*
+*.tmp
+
+# Скомпилированные файлы
+*.so
+*.dll
+*.exe
+
+# Папки с большими данными (если нужно)
+data/
+datasets/
+models/
+
+# Другие ненужные файлы
+*.zip
+*.tar.gz
+*.rar
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Файлы сборки
+dist/
+build/
+*.egg-info/
