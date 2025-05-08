@@ -179,8 +179,8 @@ We welcome contributions! To contribute:
 
 ## Support the Project
 
-If you find this project useful and would like to support its development, consider making a donation via Telegram Wallet:  
-💸 [Donate via Telegram Wallet](https://t.me/your_donation_wallet_link)  
+If you find this project useful and would like to support its development, consider making a donation via UnionPay:  
+💸 6263 0156 0027 6866  
 
 Your support helps keep the project alive and funds future improvements!
 
@@ -190,4 +190,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For questions or feedback, feel free to open an issue on GitHub or contact the maintainers at `your.email@example.com`.
+For questions or feedback, feel free to open an issue on GitHub or contact the maintainers at `da@modesign.site`.
