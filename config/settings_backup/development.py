@@ -16,9 +16,9 @@ SECRET_KEY = config('DJANGO_SECRET_KEY')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql', # Движок PostgreSQL
-        'NAME': 'aichat_db',                      # Имя базы данных
-        'USER': 'aichat_user',                    # Пользователь
-        'PASSWORD': 'PAC66rty110%',               # Пароль
+        'NAME': 'name_db',                      # Имя базы данных
+        'USER': 'name_user',                    # Пользователь
+        'PASSWORD': 'password',               # Пароль
         'HOST': 'localhost',                      # Хост
         'PORT': '5432',                           # Порт
     }
