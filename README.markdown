@@ -73,7 +73,7 @@ ai-chatbot/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/ai-chatbot.git
+   git clone https://github.com/ArtDeviant/aichatbot.git
    cd ai-chatbot
    ```
 
